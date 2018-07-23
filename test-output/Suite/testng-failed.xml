@@ -4,14 +4,52 @@
   <listeners>
     <listener class-name="com.qa.extentreportlistener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.qa.testcases.TestAddCart">
+      <class name="com.qa.testcases.TestCswLogin">
         <methods>
-          <include name="RemoveFromCart"/>
-          <include name="launchUrl"/>
+          <include name="url_launch"/>
+          <include name="closeBrowser"/>
+          <include name="coverStoryOTPLogin"/>
+          <include name="coverStoryFacebookLogin"/>
         </methods>
-      </class> <!-- com.qa.testcases.TestAddCart -->
+      </class> <!-- com.qa.testcases.TestCswLogin -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="com.qa.testcases.TestAddWishlist">
+        <methods>
+          <include name="AddToWishlistPLP"/>
+          <include name="launchURL"/>
+          <include name="closeBrowser"/>
+          <include name="AddToWishlistQuickviewLogin"/>
+          <include name="AddToWishlistPDP"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TestAddWishlist -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="com.qa.testcases.TestBannerClick">
+        <methods>
+          <include name="BannerclickWithLogin"/>
+          <include name="launchUrl"/>
+          <include name="closeBrowser"/>
+          <include name="Banner"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TestBannerClick -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="5" name="Test5(failed)">
+    <classes>
+      <class name="com.qa.testcases.TestSearch$TestAccount">
+        <methods>
+          <include name="launchUrl"/>
+          <include name="searchWithLogin"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TestSearch$TestAccount -->
+    </classes>
+  </test> <!-- Test5(failed) -->
 </suite> <!-- Failed suite [Suite] -->

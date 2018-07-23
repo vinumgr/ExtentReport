@@ -230,9 +230,9 @@ public class Globals {
 	// Close the browser instance
 	public static void browserClose() {
 		// Make sure we shut everything down to avoid memory leaks
-		//driver.close();
+		driver.close();
 		driver.quit();
-		//driver = null;
+		driver = null;
 	}
 
 

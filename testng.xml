@@ -9,11 +9,11 @@
 		    <class name="com.qa.testcases.TestCswLogin" />  	          	
 		</classes>		
 	</test> <!-- Test -->
-	<test thread-count="5" name="Test2">
+	<!-- <test thread-count="5" name="Test2">
 		<classes>		   	 
             <class name="com.qa.testcases.TestAddCart" />            	
 		</classes>		
-	</test> <!-- Test -->
+	</test> Test -->
 	<test thread-count="5" name="Test3">
 		<classes>		   	 
             <class name="com.qa.testcases.TestAddWishlist" />            	

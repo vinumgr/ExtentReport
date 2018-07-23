@@ -179,8 +179,8 @@ public class TestCswLogin extends Globals {
 	@Test(priority = 3)
 	public void coverStoryFacebookLogin() throws Exception {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
-		//Thread.sleep(10000);
-		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+		Thread.sleep(10000);
+		//WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		moveToElement(lgin.loginIcon);
 		lgin.loginIcon.click();
 		Reporter.log("Facebook : Login Icon clicked", true);
@@ -216,9 +216,9 @@ public class TestCswLogin extends Globals {
 		Reporter.log("Facebook :loginIcon button clicked", true);
 		//Thread.sleep(2000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
-		int var_ele_size= driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).size();
-		driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).get(var_ele_size-1).click();
-		//lgin.signOutButton.click();
+		/*int var_ele_size= driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).size();
+		driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).get(var_ele_size-1).click();*/
+		lgin.signOutButton.click();
 		Reporter.log("Facebook :signOutButton button clicked", true);
 
 		// assertEquals(lgin.userName.getText(),Excelutility.excelData(2, 0, 0));
@@ -251,9 +251,9 @@ public class TestCswLogin extends Globals {
 	}
 
 	// Closing the Browser:
-	/*@AfterTest
+	@AfterTest
 	public void closeBrowser() {
 		browserClose();
 	}
-*/
+
 }	

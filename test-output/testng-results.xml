@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
+    <line>
+      <![CDATA[Email : Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Email :Login button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Email :Email entered]]>
+    </line>
+    <line>
+      <![CDATA[Email :Password entered]]>
+    </line>
+    <line>
+      <![CDATA[Email :SignIn using email is successful]]>
+    </line>
+    <line>
+      <![CDATA[Email :Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Phone : Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Phone :Login button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Phone Number Login: Phone number entered]]>
+    </line>
+    <line>
+      <![CDATA[Phone Number Login :Password entered]]>
+    </line>
+    <line>
+      <![CDATA[Phone :Login using phone number is successful]]>
+    </line>
+    <line>
+      <![CDATA[Phone :Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Phone :signout using phone number is successful]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus : Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :Login button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :signinGooglePlus button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :emailAndPhoneSignin button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :nextButtonSignin button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :gmailSigninButton button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :loginIcon button clicked]]>
+    </line>
+    <line>
+      <![CDATA[GooglePlus :signOutButton button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook : Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook : Login button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook : signinFacebook button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook : facebookLoginButton button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook :loginIcon button clicked]]>
+    </line>
+    <line>
+      <![CDATA[Facebook :signOutButton button clicked]]>
+    </line>
     <line>
       <![CDATA[Phone : Login Icon clicked]]>
     </line>
@@ -13,56 +94,150 @@
     <line>
       <![CDATA[OTP sent]]>
     </line>
+    <line>
+      <![CDATA[Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Quickview window opened successful]]>
+    </line>
+    <line>
+      <![CDATA[Item added to cart successful]]>
+    </line>
+    <line>
+      <![CDATA[Wishlist section opened successful]]>
+    </line>
+    <line>
+      <![CDATA[Signout successful]]>
+    </line>
+    <line>
+      <![CDATA[Login successful]]>
+    </line>
+    <line>
+      <![CDATA[Banner clicked without Login]]>
+    </line>
+    <line>
+      <![CDATA[Banner click with Login]]>
+    </line>
+    <line>
+      <![CDATA[Search result for shorts success with login]]>
+    </line>
+    <line>
+      <![CDATA[Search result for jeans success with login]]>
+    </line>
+    <line>
+      <![CDATA[Email :Login Icon clicked]]>
+    </line>
+    <line>
+      <![CDATA[Email :signout using Email number is successful]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51007" started-at="2018-07-20T13:05:38Z" finished-at="2018-07-20T13:06:29Z">
+  <suite name="Suite" duration-ms="686437" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:20:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51007" started-at="2018-07-20T13:05:38Z" finished-at="2018-07-20T13:06:29Z">
+    <test name="Test1" duration-ms="260211" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:13:28Z">
       <class name="com.qa.testcases.TestCswLogin">
-        <test-method status="PASS" signature="url_launch()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="url_launch" is-config="true" duration-ms="33246" started-at="2018-07-20T13:05:38Z" finished-at="2018-07-20T13:06:11Z">
+        <test-method status="PASS" signature="url_launch()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="url_launch" is-config="true" duration-ms="94969" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- url_launch -->
-        <test-method status="FAIL" signature="coverStoryOTPLogin()[pri:4, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryOTPLogin" duration-ms="17651" started-at="2018-07-20T13:06:11Z" finished-at="2018-07-20T13:06:29Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at com.qa.testcases.TestCswLogin.coverStoryOTPLogin(TestCswLogin.java:250)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="coverStoryEmailLogin()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryEmailLogin" duration-ms="25543" started-at="2018-07-23T13:10:42Z" finished-at="2018-07-23T13:11:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Email : Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email :Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email :Email entered]]>
+            </line>
+            <line>
+              <![CDATA[Email :Password entered]]>
+            </line>
+            <line>
+              <![CDATA[Email :SignIn using email is successful]]>
+            </line>
+            <line>
+              <![CDATA[Email :Login Icon clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- coverStoryEmailLogin -->
+        <test-method status="PASS" signature="coverStoryPhoneLogin()[pri:1, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryPhoneLogin" duration-ms="23935" started-at="2018-07-23T13:11:08Z" finished-at="2018-07-23T13:11:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Phone : Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[Phone :Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Phone Number Login: Phone number entered]]>
+            </line>
+            <line>
+              <![CDATA[Phone Number Login :Password entered]]>
+            </line>
+            <line>
+              <![CDATA[Phone :Login using phone number is successful]]>
+            </line>
+            <line>
+              <![CDATA[Phone :Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[Phone :signout using phone number is successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- coverStoryPhoneLogin -->
+        <test-method status="PASS" signature="coverStorygoogleplusLogin()[pri:2, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStorygoogleplusLogin" duration-ms="42004" started-at="2018-07-23T13:11:32Z" finished-at="2018-07-23T13:12:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[GooglePlus : Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :signinGooglePlus button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :emailAndPhoneSignin button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :nextButtonSignin button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :gmailSigninButton button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :loginIcon button clicked]]>
+            </line>
+            <line>
+              <![CDATA[GooglePlus :signOutButton button clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- coverStorygoogleplusLogin -->
+        <test-method status="PASS" signature="coverStoryFacebookLogin()[pri:3, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryFacebookLogin" duration-ms="45179" started-at="2018-07-23T13:12:14Z" finished-at="2018-07-23T13:12:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Facebook : Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[Facebook : Login button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Facebook : signinFacebook button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Facebook : facebookLoginButton button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Facebook :loginIcon button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Facebook :signOutButton button clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- coverStoryFacebookLogin -->
+        <test-method status="PASS" signature="coverStoryOTPLogin()[pri:4, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryOTPLogin" duration-ms="21285" started-at="2018-07-23T13:12:59Z" finished-at="2018-07-23T13:13:20Z">
           <reporter-output>
             <line>
               <![CDATA[Phone : Login Icon clicked]]>
@@ -78,7 +253,107 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- coverStoryOTPLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="closeBrowser" is-config="true" duration-ms="7245" started-at="2018-07-23T13:13:20Z" finished-at="2018-07-23T13:13:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- com.qa.testcases.TestCswLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test1 -->
+    <test name="Test3" duration-ms="227790" started-at="2018-07-23T13:13:28Z" finished-at="2018-07-23T13:17:15Z">
+      <class name="com.qa.testcases.TestAddWishlist">
+        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="launchURL" is-config="true" duration-ms="85546" started-at="2018-07-23T13:13:28Z" finished-at="2018-07-23T13:14:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method status="PASS" signature="AddToWishlistQuickviewLogin()[pri:1, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistQuickviewLogin" duration-ms="52604" started-at="2018-07-23T13:14:53Z" finished-at="2018-07-23T13:15:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successful]]>
+            </line>
+            <line>
+              <![CDATA[Quickview window opened successful]]>
+            </line>
+            <line>
+              <![CDATA[Item added to cart successful]]>
+            </line>
+            <line>
+              <![CDATA[Wishlist section opened successful]]>
+            </line>
+            <line>
+              <![CDATA[Signout successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToWishlistQuickviewLogin -->
+        <test-method status="PASS" signature="AddToWishlistPLP()[pri:2, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistPLP" duration-ms="41939" started-at="2018-07-23T13:15:46Z" finished-at="2018-07-23T13:16:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Login successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AddToWishlistPLP -->
+        <test-method status="PASS" signature="AddToWishlistPDP()[pri:3, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistPDP" duration-ms="43546" started-at="2018-07-23T13:16:28Z" finished-at="2018-07-23T13:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToWishlistPDP -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="closeBrowser" is-config="true" duration-ms="4138" started-at="2018-07-23T13:17:11Z" finished-at="2018-07-23T13:17:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.TestAddWishlist -->
+    </test> <!-- Test3 -->
+    <test name="Test4" duration-ms="96217" started-at="2018-07-23T13:17:15Z" finished-at="2018-07-23T13:18:52Z">
+      <class name="com.qa.testcases.TestBannerClick">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="launchUrl" is-config="true" duration-ms="48799" started-at="2018-07-23T13:17:15Z" finished-at="2018-07-23T13:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="Banner()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="Banner" duration-ms="6082" started-at="2018-07-23T13:18:04Z" finished-at="2018-07-23T13:18:10Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Banner clicked without Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Banner -->
+        <test-method status="PASS" signature="BannerclickWithLogin()[pri:1, instance:com.qa.testcases.TestBannerClick@50de0926]" name="BannerclickWithLogin" duration-ms="35895" started-at="2018-07-23T13:18:10Z" finished-at="2018-07-23T13:18:46Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Banner click with Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BannerclickWithLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="closeBrowser" is-config="true" duration-ms="5437" started-at="2018-07-23T13:18:46Z" finished-at="2018-07-23T13:18:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.TestBannerClick -->
+    </test> <!-- Test4 -->
+    <test name="Test5" duration-ms="102154" started-at="2018-07-23T13:18:52Z" finished-at="2018-07-23T13:20:34Z">
+      <class name="com.qa.testcases.TestSearch$TestAccount">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="launchUrl" is-config="true" duration-ms="42669" started-at="2018-07-23T13:18:52Z" finished-at="2018-07-23T13:19:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="searchWithLogin()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="searchWithLogin" duration-ms="53817" started-at="2018-07-23T13:19:34Z" finished-at="2018-07-23T13:20:28Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Search result for shorts success with login]]>
+            </line>
+            <line>
+              <![CDATA[Search result for jeans success with login]]>
+            </line>
+            <line>
+              <![CDATA[Email :Login Icon clicked]]>
+            </line>
+            <line>
+              <![CDATA[Email :signout using Email number is successful]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchWithLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="closeBrowser" is-config="true" duration-ms="5665" started-at="2018-07-23T13:20:28Z" finished-at="2018-07-23T13:20:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.testcases.TestSearch$TestAccount -->
+    </test> <!-- Test5 -->
+  </suite> <!-- Suite -->
 </testng-results>

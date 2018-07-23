@@ -16,6 +16,7 @@ import com.qa.globals.Globals;
 import com.qa.pageobjects.AddToCartObjects;
 import com.qa.pageobjects.AddToWishlist_PO;
 import com.qa.pageobjects.QuickViewObjects;
+import com.qa.pageobjects.SearchPage;
 
 
 public class TestAddCart extends Globals {
@@ -86,7 +87,9 @@ public class TestAddCart extends Globals {
 
 	public void RemoveFromCart() throws Exception {
 		AddToCartObjects addcart = new AddToCartObjects(driver);
+		SearchPage search = new SearchPage(driver);
 		boolean outOfStock = false;
+		search.coverstoryName.click();
 		moveToElement(addcart.clothing);
 		Thread.sleep(2000);
 		//WebDriverExplicitWait(driver, 20, "Xpath", Constants.dressAndJumpsuits);

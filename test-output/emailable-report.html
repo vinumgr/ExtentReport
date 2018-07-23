@@ -8,42 +8,28 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">51,007</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">260,211</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test3</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">227,790</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test4</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">96,217</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">Test5</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">102,154</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">11</th><th class="num">0</th><th class="num">0</th><th class="num">686,372</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.testcases.TestCswLogin</td><td><a href="#m0">coverStoryOTPLogin</a></td><td rowspan="1">1532091971919</td><td rowspan="1">17651</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.qa.testcases.TestCswLogin</td><td><a href="#m0">coverStoryEmailLogin</a></td><td rowspan="1">1532351442820</td><td rowspan="1">25543</td></tr><tr class="passedeven"><td><a href="#m1">coverStoryFacebookLogin</a></td><td rowspan="1">1532351534316</td><td rowspan="1">45179</td></tr><tr class="passedeven"><td><a href="#m2">coverStoryOTPLogin</a></td><td rowspan="1">1532351579503</td><td rowspan="1">21285</td></tr><tr class="passedeven"><td><a href="#m3">coverStoryPhoneLogin</a></td><td rowspan="1">1532351468369</td><td rowspan="1">23935</td></tr><tr class="passedeven"><td><a href="#m4">coverStorygoogleplusLogin</a></td><td rowspan="1">1532351492308</td><td rowspan="1">42004</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test3 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.testcases.TestAddWishlist</td><td><a href="#m5">AddToWishlistPDP</a></td><td rowspan="1">1532351788171</td><td rowspan="1">43546</td></tr><tr class="passedeven"><td><a href="#m6">AddToWishlistPLP</a></td><td rowspan="1">1532351746228</td><td rowspan="1">41939</td></tr><tr class="passedeven"><td><a href="#m7">AddToWishlistQuickviewLogin</a></td><td rowspan="1">1532351693619</td><td rowspan="1">52604</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test4 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.testcases.TestBannerClick</td><td><a href="#m8">Banner</a></td><td rowspan="1">1532351884683</td><td rowspan="1">6082</td></tr><tr class="passedeven"><td><a href="#m9">BannerclickWithLogin</a></td><td rowspan="1">1532351890766</td><td rowspan="1">35895</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">Test5 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.testcases.TestSearch$TestAccount</td><td><a href="#m10">searchWithLogin</a></td><td rowspan="1">1532351974779</td><td rowspan="1">53817</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.qa.testcases.TestCswLogin#coverStoryOTPLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Phone : Login Icon clicked<br/>Phone :Login button clicked<br/>Login with OTP: Phone number entered<br/>OTP sent</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.qa.testcases.TestCswLogin.coverStoryOTPLogin(TestCswLogin.java:250)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">com.qa.testcases.TestCswLogin#coverStoryEmailLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Email : Login Icon clicked<br/>Email :Login button clicked<br/>Email :Email entered<br/>Email :Password entered<br/>Email :SignIn using email is successful<br/>Email :Login Icon clicked</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.testcases.TestCswLogin#coverStoryFacebookLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Facebook : Login Icon clicked<br/>Facebook : Login button clicked<br/>Facebook : signinFacebook button clicked<br/>Facebook : facebookLoginButton button clicked<br/>Facebook :loginIcon button clicked<br/>Facebook :signOutButton button clicked</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.testcases.TestCswLogin#coverStoryOTPLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Phone : Login Icon clicked<br/>Phone :Login button clicked<br/>Login with OTP: Phone number entered<br/>OTP sent</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.testcases.TestCswLogin#coverStoryPhoneLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Phone : Login Icon clicked<br/>Phone :Login button clicked<br/>Phone Number Login: Phone number entered<br/>Phone Number Login :Password entered<br/>Phone :Login using phone number is successful<br/>Phone :Login Icon clicked<br/>Phone :signout using phone number is successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.testcases.TestCswLogin#coverStorygoogleplusLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">GooglePlus : Login Icon clicked<br/>GooglePlus :Login button clicked<br/>GooglePlus :signinGooglePlus button clicked<br/>GooglePlus :emailAndPhoneSignin button clicked<br/>GooglePlus :nextButtonSignin button clicked<br/>GooglePlus :gmailSigninButton button clicked<br/>GooglePlus :loginIcon button clicked<br/>GooglePlus :signOutButton button clicked</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test3</h2><h3 id="m5">com.qa.testcases.TestAddWishlist#AddToWishlistPDP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.testcases.TestAddWishlist#AddToWishlistPLP</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.testcases.TestAddWishlist#AddToWishlistQuickviewLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login successful<br/>Quickview window opened successful<br/>Item added to cart successful<br/>Wishlist section opened successful<br/>Signout successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test4</h2><h3 id="m8">com.qa.testcases.TestBannerClick#Banner</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Banner clicked without Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.qa.testcases.TestBannerClick#BannerclickWithLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Banner click with Login</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test5</h2><h3 id="m10">com.qa.testcases.TestSearch$TestAccount#searchWithLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Search result for shorts success with login<br/>Search result for jeans success with login<br/>Email :Login Icon clicked<br/>Email :signout using Email number is successful</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

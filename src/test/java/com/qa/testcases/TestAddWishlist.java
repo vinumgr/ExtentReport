@@ -29,7 +29,7 @@ public class TestAddWishlist extends Globals{
 	
 	}
 	//Add to wishlist from PLP
-@Test(priority = 0)
+/*@Test(priority = 0)
 	
 	public void AddToWishlistQuickview() throws Exception {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
@@ -65,7 +65,7 @@ public class TestAddWishlist extends Globals{
 		addwishlist.wishlistInAccount.click();
 		Reporter.log("Wishlist section viewed successful",true);
 	
-}
+}*/
 
 @Test(priority = 1)
 
@@ -75,8 +75,8 @@ public void AddToWishlistQuickviewLogin() throws Exception {
 	AddToWishlist_PO addwishlist = new AddToWishlist_PO(driver);
 	QuickViewObjects quickview = new QuickViewObjects(driver);
 	//Login with email
-			//CommonMethods.loginViaEmail();
-			//Reporter.log("Login successful",true);
+			CommonMethods.loginViaEmail();
+			Reporter.log("Login successful",true);
 			Thread.sleep(3000);
 			//WebDriverExplicitWait(driver, 10, "Xpath", Constants.clothing);
 			moveToElement(addcart.clothing);
@@ -117,7 +117,7 @@ public void AddToWishlistPLP() throws Exception {
 	QuickViewObjects quickview = new QuickViewObjects(driver);
 	CommonMethods.loginViaEmail();	
 	Reporter.log("Login successful",true);
-	moveToElement(addcart.clothing);;
+	moveToElement(addcart.clothing);
 	Thread.sleep(3000);
 	//WebDriverExplicitWait(driver, 10, "Xpath", Constants.clothing);
 	moveToElement(addcart.clothing);

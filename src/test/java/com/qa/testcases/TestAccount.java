@@ -33,7 +33,7 @@ public class TestAccount extends Globals {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
 		AccountPage account = new AccountPage(driver);
 		//Login with email
-				CommonMethods.loginViaEmail();	
+				CommonMethods.loginViaEmail();
 				Thread.sleep(10000);
 				//WebDriverExplicitWait(driver, 20, "Xpath", Constants.loginIcon);
 				lgin.loginIcon.click();
@@ -47,6 +47,7 @@ public class TestAccount extends Globals {
 				account.editProfileButton.click();
 				Reporter.log("Account : editProfileButton button clicked", true);
 				account.firstNameBox.clear();
+				//account.clearTextBoxValue(account.firstNameBox);
 				account.firstNameBox.sendKeys("FirstNameEdited");
 				Reporter.log("First name successfully edited",true);
 				account.lastNameBox.clear();
