@@ -208,6 +208,7 @@ public class TestCswLogin extends Globals {
 		lgin.facebookLoginButton.click();
 		Reporter.log("Facebook : facebookLoginButton button clicked", true);
 		//Thread.sleep(5000);
+		//switchWindowByTitle(QA_CoverStoryURL);
 		switchToPreviousTabOrWindow();
 		//moveToElement(lgin.loginIcon);
 		//Thread.sleep(5000);
@@ -222,7 +223,7 @@ public class TestCswLogin extends Globals {
 		// assertEquals(lgin.userName.getText(),Excelutility.excelData(2, 0, 0));
 		// captureScreen();
 	}
-	/*@Test(priority = 4)
+	@Test(priority = 4)
 	public void coverStoryOTPLogin() throws Exception {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
 		//Thread.sleep(10000);
@@ -244,7 +245,7 @@ public class TestCswLogin extends Globals {
 		Reporter.log("OTP sent", true);
 		//Assert.assertEquals("Enter OTP to Sign In", lgin.OTPEnterPage.getText());
 		System.out.println();
-	}*/
+	}
 
 	// Closing the Browser:
 	@AfterTest

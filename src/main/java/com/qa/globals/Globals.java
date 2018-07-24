@@ -182,8 +182,7 @@ public class Globals {
 		// Optional, if not specified, WebDriver will search your path for
 		// chromedriver.
 		System.setProperty("webdriver.chrome.driver", directoryPath + "/Driver/chromedriver.exe");
-		System.setProperty("webdriver.ie.driver",
-				directoryPath + "\\lib\\DriverRelated\\IE\\IEDriverServer2.53_Win32.exe");
+		System.setProperty("webdriver.ie.driver", directoryPath + "\\lib\\DriverRelated\\IE\\IEDriverServer2.53_Win32.exe");
 		System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
 		System.setProperty("browser", "Chrome");
 		System.setProperty("browserVersion", "51.0");

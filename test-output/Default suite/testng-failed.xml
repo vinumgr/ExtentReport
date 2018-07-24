@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.TestAccount">
+      <class name="com.qa.testcases.TestCswLogin">
         <methods>
-          <include name="MyAccountSignOutPage"/>
-          <include name="launchUrl"/>
+          <include name="url_launch"/>
           <include name="closeBrowser"/>
+          <include name="coverStoryFacebookLogin"/>
         </methods>
-      </class> <!-- com.qa.testcases.TestAccount -->
+      </class> <!-- com.qa.testcases.TestCswLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
