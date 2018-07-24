@@ -32,7 +32,8 @@ public class SearchPage extends Globals{
 		@FindBy(xpath="//*[contains(@class, 'owl-dot active')]")
 		public WebElement bannerSlider;
 		
-		@FindBy(xpath="//*[@id='page']/header/div/div/div/div[2]/div[2]/a/img")
+		//@FindBy(xpath="//*[@id='page']/header/div/div/div/div[2]/div[2]/a/img")
+		@FindBy(xpath="//a[@title='Coverstory – https://www.coverstory.co.in']/img")
 		public WebElement coverstoryName;
 		
 		@FindBy(xpath="//*[starts-with(@id, 'myCarousel')]")

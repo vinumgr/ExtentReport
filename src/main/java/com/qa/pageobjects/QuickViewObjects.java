@@ -21,6 +21,7 @@ public class QuickViewObjects extends Globals {
 	public WebElement quickviewPLPTwo;
 	
 	@FindBy(xpath="//*[@id='productsCatalog']/li[1]/div/div[2]/a/div/div[2]/span")
+	//@FindBy(xpath=//span[@class='quickview']")
 	public WebElement quickviewIcon;
 	
 	@FindBy(xpath="//*[@id=\"quickviewdetail-add-tocart-btn\"]")
@@ -42,21 +43,26 @@ public class QuickViewObjects extends Globals {
 	public WebElement quickviewSizeSelectErr;
 	
 	
-	@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[1]")
+	//@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[1]")
+	@FindBy(xpath="//div[@class='col-sm-10 col-xs-12 pd0']/span[1]")
 	public WebElement quickviewXS;
 	
-	@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[2]")
+	//@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[2]")
+	@FindBy(xpath="//div[@class='col-sm-10 col-xs-12 pd0']/span[2]")
 	public WebElement quickviewS;
 	
-	@FindBy(xpath="//*[@id=\"quickview_productdetail\"]/div[2]/div[1]/div[2]/span[3]")
+	//@FindBy(xpath="//*[@id=\"quickview_productdetail\"]/div[2]/div[1]/div[2]/span[3]")
+	@FindBy(xpath="//div[@class='col-sm-10 col-xs-12 pd0']/span[3]")
 	public WebElement quickviewM;
 	
 	//@FindBy(xpath="//span[contains(text(),'L')]")
-	@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[4]")
+	//@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[4]")
+	@FindBy(xpath="//div[@class='col-sm-10 col-xs-12 pd0']/span[4]")
 	public WebElement quickviewL;
 	
 	//@FindBy(xpath="//span[contains(text(),'XL')]")
-	@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[5]")
+	//@FindBy(xpath="//*[@id='quickview_productdetail']/div[2]/div[1]/div[2]/span[5]")
+	@FindBy(xpath="//div[@class='col-sm-10 col-xs-12 pd0']/span[5]")
 	public WebElement quickviewXL;
 	
 	@FindBy(xpath="//*[@id='quickview_productdetail']/div[3]/div[1]/div[2]/div/div/div[2]/text()/br")

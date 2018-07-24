@@ -29,7 +29,7 @@ public class Constants {
 	public static String signinGooglePlus = "//button[@type='button'][contains(text(),'Sign in with Gplus')]";
 	public static String signinFacebook = "//button[@type='button'][contains(text(),'Sign in with Facebook')]";
 	public static String facebookLoginButton = "//button[@id='loginbutton']";
-	public static String facebookEmailAndPhone = "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]";
+	public static String facebookEmailAndPhone = "//input[@id='email']";
 	public static String MyAccount = "//*[@id='page']/header/div/div/div/div[4]/div/div[3]/div/ul/li[3]/a";
 	public static String editProfileButton = "//*[@id='CProEditButton']";
 	public static String saveProfileButton = "//*[@id='CProSaveButton']";

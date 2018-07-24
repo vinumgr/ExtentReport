@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testcases.TestAddWishlist">
+      <class name="com.qa.testcases.TestAccount">
         <methods>
-          <include name="launchURL"/>
+          <include name="MyAccountSignOutPage"/>
+          <include name="launchUrl"/>
           <include name="closeBrowser"/>
-          <include name="AddToWishlistQuickviewLogin"/>
         </methods>
-      </class> <!-- com.qa.testcases.TestAddWishlist -->
+      </class> <!-- com.qa.testcases.TestAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

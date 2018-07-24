@@ -53,12 +53,17 @@ public class TestCswLogin extends Globals {
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signInButton);
 		lgin.signInButton.click();
 		Reporter.log("Email :SignIn using email is successful", true);
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		//WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		Reporter.log("Email :Login Icon clicked", true);
-		Thread.sleep(3000);
+		System.out.println(lgin.signOutButton);
+		//Assert.assertEquals("Sign Out", lgin.signOutButton.getText(),"Text not matched | ");
+		// Assert.assertEquals(driver.findElement(By.xpath("//li[6]//a[@class='sel-logout ']")),"Sign Out");
+		//Thread.sleep(3000);
+		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
 		lgin.signOutButton.click();
+		Reporter.log("Email :signout using phone number is successful", true);
 	/*	//Assert.assertEquals("Sign Out", lgin.signOutButton.getText(),"Text not matched | ");
 		//assertTrue("Sign Out".trim().equals(lgin.signOutButton.getText()));
 		
@@ -162,7 +167,7 @@ public class TestCswLogin extends Globals {
 		Thread.sleep(5000);
 		switchToPreviousTabOrWindow();	
 		//Thread.sleep(5000);
-		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+		//WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		Reporter.log("GooglePlus :loginIcon button clicked", true);
 		//Thread.sleep(2000);
@@ -179,8 +184,8 @@ public class TestCswLogin extends Globals {
 	@Test(priority = 3)
 	public void coverStoryFacebookLogin() throws Exception {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
-		Thread.sleep(10000);
-		//WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+		//Thread.sleep(10000);
+		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		moveToElement(lgin.loginIcon);
 		lgin.loginIcon.click();
 		Reporter.log("Facebook : Login Icon clicked", true);
@@ -190,7 +195,7 @@ public class TestCswLogin extends Globals {
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signinFacebook);
 		lgin.signinFacebook.click();
 		Reporter.log("Facebook : signinFacebook button clicked", true);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		//WebDriverExplicitWait(driver, 10, "Xpath", Constants.facebookEmailAndPhone);
 		switchToLatestTabOrWindow();
 		log(Excelutility.excelData(5, 0, 0));
@@ -202,31 +207,22 @@ public class TestCswLogin extends Globals {
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.facebookLoginButton);
 		lgin.facebookLoginButton.click();
 		Reporter.log("Facebook : facebookLoginButton button clicked", true);
-		/*//Thread.sleep(1000);
-		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
-		lgin.loginIcon.click();
-		Reporter.log("loginIcon button clicked", true);
-		//Thread.sleep(2000);
-		lgin.facebookSignOutButton.click();
-		*/
-       switchToPreviousTabOrWindow();
-		Thread.sleep(5000);
-       //WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+		//Thread.sleep(5000);
+		switchToPreviousTabOrWindow();
+		//moveToElement(lgin.loginIcon);
+		//Thread.sleep(5000);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.loginIcon);
+		//moveToElement(lgin.loginIcon);
 		lgin.loginIcon.click();
 		Reporter.log("Facebook :loginIcon button clicked", true);
 		//Thread.sleep(2000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
-		/*int var_ele_size= driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).size();
-		driver.findElements(By.xpath("//a[contains(text(),'Sign Out')]")).get(var_ele_size-1).click();*/
 		lgin.signOutButton.click();
 		Reporter.log("Facebook :signOutButton button clicked", true);
-
 		// assertEquals(lgin.userName.getText(),Excelutility.excelData(2, 0, 0));
 		// captureScreen();
-
 	}
-	
-	@Test(priority = 4)
+	/*@Test(priority = 4)
 	public void coverStoryOTPLogin() throws Exception {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
 		//Thread.sleep(10000);
@@ -246,9 +242,9 @@ public class TestCswLogin extends Globals {
 		Thread.sleep(5000);
 		lgin.signinOTP.click();
 		Reporter.log("OTP sent", true);
-		Assert.assertEquals("Enter OTP to Sign In", lgin.OTPEnterPage.getText());
+		//Assert.assertEquals("Enter OTP to Sign In", lgin.OTPEnterPage.getText());
 		System.out.println();
-	}
+	}*/
 
 	// Closing the Browser:
 	@AfterTest

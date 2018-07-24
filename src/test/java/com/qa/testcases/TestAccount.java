@@ -15,6 +15,7 @@ import com.qa.globals.Constants;
 import com.qa.globals.Globals;
 import com.qa.pageobjects.AccountPage;
 import com.qa.pageobjects.LoginPageobjects;
+import com.qa.pageobjects.SearchPage;
 
 
 public class TestAccount extends Globals {
@@ -105,46 +106,34 @@ public class TestAccount extends Globals {
 						Thread.sleep(5000);
 						account.deleteAddress.click();
 						Reporter.log("Account : deleteAddress button clicked", true);
+						switchToLatestTabOrWindow();
 						account.deleteAddressconfirm.click();
 						Reporter.log("Account : deleteAddressconfirm button clicked", true);
 
 				}
 				//Account Info updating :SignOut Page
 				@Test(priority = 4)
-
 				public void MyAccountSignOutPage() throws Exception {
 					//LoginPageobjects lgin = new LoginPageobjects(driver);
 					AccountPage account = new AccountPage(driver);
+					SearchPage search = new SearchPage(driver);
 					Thread.sleep(5000);
-					/*CommonMethods.loginViaEmail();	
-					Thread.sleep(10000);
-					//WebDriverExplicitWait(driver, 20, "Xpath", Constants.loginIcon);
-					lgin.loginIcon.click();
-					Reporter.log("Account : loginIcon button clicked", true);
-					//Thread.sleep(2000);
-					WebDriverExplicitWait(driver, 10, "Xpath", Constants.MyAccount);
-					account.MyAccount.click();
-					Reporter.log("Account : MyAccount button clicked", true);*/
 						account.signOut.click();
 						Reporter.log("Account : signOut button clicked", true);
 						//Thread.sleep(5000);
-						//switchToLatestTabOrWindow();
-						/*account.keepMeSignedIn.click();
-						Reporter.log("Account : keepMeSignedIn button clicked", true);
+						switchToLatestTabOrWindow();
 						//Thread.sleep(5000);
-						account.signOut.click();*/
-						//switchToLatestTabOrWindow();
-						Reporter.log("Account : signOut button clicked", true);
-						Thread.sleep(5000);
+						moveToElement(account.keepMeSignedOut);
 						account.keepMeSignedOut.click();
+						//switchToPreviousTabOrWindow();
 						Reporter.log("Account : keepMeSignedOut button clicked", true);
-
+											
 				}
 				
 				// Closing the Browser:
 				@AfterTest
 				public void closeBrowser() {
-					browserClose();
+					driver.quit();
 				}
 
 	}	

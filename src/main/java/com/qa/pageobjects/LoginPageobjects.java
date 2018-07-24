@@ -21,7 +21,9 @@ public class LoginPageobjects extends Globals {
 	@FindBy(xpath="//*[@id='content']/div[3]/div[2]/div[4]/div/div[2]/button")
 	public WebElement checkbtn;
 	
-	@FindBy(xpath =".//span[@class='user-icon-inner']")
+	//@FindBy(xpath =".//span[@class='user-icon-inner']")
+	
+	@FindBy(xpath ="//*[@id='page']/header/div/div/div/div[4]/div/div[3]/span")
 	public WebElement loginIcon; 
 
 	@FindBy(xpath ="//*[@id='mini-cart-header']/span[1]")
@@ -37,8 +39,8 @@ public class LoginPageobjects extends Globals {
 	public WebElement signInButton;
 	
 	@FindBy(xpath ="//*[@id='page']/header/div/div/div/div[4]/div/div[3]/div/ul/li[6]")
-	//@FindBy(xpath ="//*[@title, 'Logout']//*[@class='sel-logout ']")
-	//@FindBy(xpath ="//a[contains(@title, 'Logout') and contains(@rel, 'nofollow')]")
+	//@FindBy(xpath ="//li[6]//a[@class='sel-logout ']")
+	//@FindBy(css =".sel-logout")
 	public WebElement signOutButton;
 	
 	
@@ -74,7 +76,8 @@ public class LoginPageobjects extends Globals {
 	@FindBy(xpath ="//button[@type='button'][contains(text(),'Sign in with Facebook')]")
 	public WebElement signinFacebook;
 	
-	@FindBy(xpath ="/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]")
+	//@FindBy(xpath ="/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/input[1]")
+	@FindBy(xpath ="//input[@id='email']")
 	public WebElement facebookEmailAndPhone;
 	
 	@FindBy(xpath ="//input[@id='pass']")
@@ -83,7 +86,7 @@ public class LoginPageobjects extends Globals {
 	@FindBy(xpath ="//button[@id='loginbutton']")
 	public WebElement facebookLoginButton;
 	
-	@FindBy(xpath ="//*[@id=\"js_0\"]/div/div/div[2]/div/div/a")
-	public WebElement facebookSignOutButton;
+	/*//@FindBy(xpath ="//*[@id=\"js_0\"]/div/div/div[2]/div/div/a")
+	public WebElement facebookSignOutButton;*/
 	
 }

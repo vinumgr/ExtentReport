@@ -11,6 +11,7 @@
           <include name="url_launch"/>
           <include name="closeBrowser"/>
           <include name="coverStoryOTPLogin"/>
+          <include name="coverStorygoogleplusLogin"/>
           <include name="coverStoryFacebookLogin"/>
         </methods>
       </class> <!-- com.qa.testcases.TestCswLogin -->

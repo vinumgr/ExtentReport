@@ -1,359 +1,247 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
     <line>
-      <![CDATA[Email : Login Icon clicked]]>
+      <![CDATA[Account : loginIcon button clicked]]>
     </line>
     <line>
-      <![CDATA[Email :Login button clicked]]>
+      <![CDATA[Account : MyAccount button clicked]]>
     </line>
     <line>
-      <![CDATA[Email :Email entered]]>
+      <![CDATA[Account : editProfileButton button clicked]]>
     </line>
     <line>
-      <![CDATA[Email :Password entered]]>
+      <![CDATA[First name successfully edited]]>
     </line>
     <line>
-      <![CDATA[Email :SignIn using email is successful]]>
+      <![CDATA[Last name successfully edited]]>
     </line>
     <line>
-      <![CDATA[Email :Login Icon clicked]]>
+      <![CDATA[Account : saveProfileButton button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone : Login Icon clicked]]>
+      <![CDATA[Account : changeAccountPasswordButton button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone :Login button clicked]]>
+      <![CDATA[Account : newPasswordBox button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone Number Login: Phone number entered]]>
+      <![CDATA[Account : confirmPasswordBox button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone Number Login :Password entered]]>
+      <![CDATA[Account : savePasswordButton button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone :Login using phone number is successful]]>
+      <![CDATA[Account : mySavedAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone :Login Icon clicked]]>
+      <![CDATA[Account : openAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[Phone :signout using phone number is successful]]>
+      <![CDATA[Account : firstNameAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus : Login Icon clicked]]>
+      <![CDATA[Account : LastNameAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :Login button clicked]]>
+      <![CDATA[Account : pincodeAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :signinGooglePlus button clicked]]>
+      <![CDATA[Account : address1AddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :emailAndPhoneSignin button clicked]]>
+      <![CDATA[Account : phoneAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :nextButtonSignin button clicked]]>
+      <![CDATA[Account : saveAddressInAddNewAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :gmailSigninButton button clicked]]>
+      <![CDATA[Account : deleteAddress button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :loginIcon button clicked]]>
+      <![CDATA[Account : deleteAddressconfirm button clicked]]>
     </line>
     <line>
-      <![CDATA[GooglePlus :signOutButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook : Login Icon clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook : Login button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook : signinFacebook button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook : facebookLoginButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook :loginIcon button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Facebook :signOutButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Phone : Login Icon clicked]]>
-    </line>
-    <line>
-      <![CDATA[Phone :Login button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Login with OTP: Phone number entered]]>
-    </line>
-    <line>
-      <![CDATA[OTP sent]]>
-    </line>
-    <line>
-      <![CDATA[Login successful]]>
-    </line>
-    <line>
-      <![CDATA[Quickview window opened successful]]>
-    </line>
-    <line>
-      <![CDATA[Item added to cart successful]]>
-    </line>
-    <line>
-      <![CDATA[Wishlist section opened successful]]>
-    </line>
-    <line>
-      <![CDATA[Signout successful]]>
-    </line>
-    <line>
-      <![CDATA[Login successful]]>
-    </line>
-    <line>
-      <![CDATA[Banner clicked without Login]]>
-    </line>
-    <line>
-      <![CDATA[Banner click with Login]]>
-    </line>
-    <line>
-      <![CDATA[Search result for shorts success with login]]>
-    </line>
-    <line>
-      <![CDATA[Search result for jeans success with login]]>
-    </line>
-    <line>
-      <![CDATA[Email :Login Icon clicked]]>
-    </line>
-    <line>
-      <![CDATA[Email :signout using Email number is successful]]>
+      <![CDATA[Account : signOut button clicked]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="686437" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:20:34Z">
+  <suite name="Default suite" duration-ms="92229" started-at="2018-07-24T13:02:44Z" finished-at="2018-07-24T13:04:16Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="260211" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:13:28Z">
-      <class name="com.qa.testcases.TestCswLogin">
-        <test-method status="PASS" signature="url_launch()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="url_launch" is-config="true" duration-ms="94969" started-at="2018-07-23T13:09:07Z" finished-at="2018-07-23T13:10:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- url_launch -->
-        <test-method status="PASS" signature="coverStoryEmailLogin()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryEmailLogin" duration-ms="25543" started-at="2018-07-23T13:10:42Z" finished-at="2018-07-23T13:11:08Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Email : Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Email :Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Email :Email entered]]>
-            </line>
-            <line>
-              <![CDATA[Email :Password entered]]>
-            </line>
-            <line>
-              <![CDATA[Email :SignIn using email is successful]]>
-            </line>
-            <line>
-              <![CDATA[Email :Login Icon clicked]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- coverStoryEmailLogin -->
-        <test-method status="PASS" signature="coverStoryPhoneLogin()[pri:1, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryPhoneLogin" duration-ms="23935" started-at="2018-07-23T13:11:08Z" finished-at="2018-07-23T13:11:32Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Phone : Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Phone :Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Phone Number Login: Phone number entered]]>
-            </line>
-            <line>
-              <![CDATA[Phone Number Login :Password entered]]>
-            </line>
-            <line>
-              <![CDATA[Phone :Login using phone number is successful]]>
-            </line>
-            <line>
-              <![CDATA[Phone :Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Phone :signout using phone number is successful]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- coverStoryPhoneLogin -->
-        <test-method status="PASS" signature="coverStorygoogleplusLogin()[pri:2, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStorygoogleplusLogin" duration-ms="42004" started-at="2018-07-23T13:11:32Z" finished-at="2018-07-23T13:12:14Z">
-          <reporter-output>
-            <line>
-              <![CDATA[GooglePlus : Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :signinGooglePlus button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :emailAndPhoneSignin button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :nextButtonSignin button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :gmailSigninButton button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :loginIcon button clicked]]>
-            </line>
-            <line>
-              <![CDATA[GooglePlus :signOutButton button clicked]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- coverStorygoogleplusLogin -->
-        <test-method status="PASS" signature="coverStoryFacebookLogin()[pri:3, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryFacebookLogin" duration-ms="45179" started-at="2018-07-23T13:12:14Z" finished-at="2018-07-23T13:12:59Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Facebook : Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Facebook : Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Facebook : signinFacebook button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Facebook : facebookLoginButton button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Facebook :loginIcon button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Facebook :signOutButton button clicked]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- coverStoryFacebookLogin -->
-        <test-method status="PASS" signature="coverStoryOTPLogin()[pri:4, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="coverStoryOTPLogin" duration-ms="21285" started-at="2018-07-23T13:12:59Z" finished-at="2018-07-23T13:13:20Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Phone : Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Phone :Login button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Login with OTP: Phone number entered]]>
-            </line>
-            <line>
-              <![CDATA[OTP sent]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- coverStoryOTPLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestCswLogin@4ae82894]" name="closeBrowser" is-config="true" duration-ms="7245" started-at="2018-07-23T13:13:20Z" finished-at="2018-07-23T13:13:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.TestCswLogin -->
-    </test> <!-- Test1 -->
-    <test name="Test3" duration-ms="227790" started-at="2018-07-23T13:13:28Z" finished-at="2018-07-23T13:17:15Z">
-      <class name="com.qa.testcases.TestAddWishlist">
-        <test-method status="PASS" signature="launchURL()[pri:0, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="launchURL" is-config="true" duration-ms="85546" started-at="2018-07-23T13:13:28Z" finished-at="2018-07-23T13:14:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method status="PASS" signature="AddToWishlistQuickviewLogin()[pri:1, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistQuickviewLogin" duration-ms="52604" started-at="2018-07-23T13:14:53Z" finished-at="2018-07-23T13:15:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login successful]]>
-            </line>
-            <line>
-              <![CDATA[Quickview window opened successful]]>
-            </line>
-            <line>
-              <![CDATA[Item added to cart successful]]>
-            </line>
-            <line>
-              <![CDATA[Wishlist section opened successful]]>
-            </line>
-            <line>
-              <![CDATA[Signout successful]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddToWishlistQuickviewLogin -->
-        <test-method status="PASS" signature="AddToWishlistPLP()[pri:2, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistPLP" duration-ms="41939" started-at="2018-07-23T13:15:46Z" finished-at="2018-07-23T13:16:28Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Login successful]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- AddToWishlistPLP -->
-        <test-method status="PASS" signature="AddToWishlistPDP()[pri:3, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="AddToWishlistPDP" duration-ms="43546" started-at="2018-07-23T13:16:28Z" finished-at="2018-07-23T13:17:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddToWishlistPDP -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestAddWishlist@4b9e255]" name="closeBrowser" is-config="true" duration-ms="4138" started-at="2018-07-23T13:17:11Z" finished-at="2018-07-23T13:17:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.TestAddWishlist -->
-    </test> <!-- Test3 -->
-    <test name="Test4" duration-ms="96217" started-at="2018-07-23T13:17:15Z" finished-at="2018-07-23T13:18:52Z">
-      <class name="com.qa.testcases.TestBannerClick">
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="launchUrl" is-config="true" duration-ms="48799" started-at="2018-07-23T13:17:15Z" finished-at="2018-07-23T13:18:04Z">
+    <test name="Default test" duration-ms="92229" started-at="2018-07-24T13:02:44Z" finished-at="2018-07-24T13:04:16Z">
+      <class name="com.qa.testcases.TestAccount">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="launchUrl" is-config="true" duration-ms="30467" started-at="2018-07-24T13:02:44Z" finished-at="2018-07-24T13:03:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="Banner()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="Banner" duration-ms="6082" started-at="2018-07-23T13:18:04Z" finished-at="2018-07-23T13:18:10Z">
+        <test-method status="PASS" signature="MyAccountInfo()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountInfo" duration-ms="20752" started-at="2018-07-24T13:03:14Z" finished-at="2018-07-24T13:03:35Z">
           <reporter-output>
             <line>
-              <![CDATA[Banner clicked without Login]]>
+              <![CDATA[Account : loginIcon button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : MyAccount button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : editProfileButton button clicked]]>
+            </line>
+            <line>
+              <![CDATA[First name successfully edited]]>
+            </line>
+            <line>
+              <![CDATA[Last name successfully edited]]>
+            </line>
+            <line>
+              <![CDATA[Account : saveProfileButton button clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Banner -->
-        <test-method status="PASS" signature="BannerclickWithLogin()[pri:1, instance:com.qa.testcases.TestBannerClick@50de0926]" name="BannerclickWithLogin" duration-ms="35895" started-at="2018-07-23T13:18:10Z" finished-at="2018-07-23T13:18:46Z">
+        </test-method> <!-- MyAccountInfo -->
+        <test-method status="PASS" signature="MyAccountChangePassword()[pri:1, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountChangePassword" duration-ms="526" started-at="2018-07-24T13:03:35Z" finished-at="2018-07-24T13:03:36Z">
           <reporter-output>
             <line>
-              <![CDATA[Banner click with Login]]>
+              <![CDATA[Account : changeAccountPasswordButton button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : newPasswordBox button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : confirmPasswordBox button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : savePasswordButton button clicked]]>
             </line>
           </reporter-output>
-        </test-method> <!-- BannerclickWithLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestBannerClick@50de0926]" name="closeBrowser" is-config="true" duration-ms="5437" started-at="2018-07-23T13:18:46Z" finished-at="2018-07-23T13:18:52Z">
+        </test-method> <!-- MyAccountChangePassword -->
+        <test-method status="PASS" signature="MyAccountOrderPage()[pri:2, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountOrderPage" duration-ms="1784" started-at="2018-07-24T13:03:36Z" finished-at="2018-07-24T13:03:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyAccountOrderPage -->
+        <test-method status="PASS" signature="MyAccountSaveAddressPage()[pri:3, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountSaveAddressPage" duration-ms="9724" started-at="2018-07-24T13:03:37Z" finished-at="2018-07-24T13:03:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Account : mySavedAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : openAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : firstNameAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : LastNameAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : pincodeAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : address1AddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : phoneAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : saveAddressInAddNewAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : deleteAddress button clicked]]>
+            </line>
+            <line>
+              <![CDATA[Account : deleteAddressconfirm button clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MyAccountSaveAddressPage -->
+        <test-method status="FAIL" signature="MyAccountSignOutPage()[pri:4, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountSignOutPage" duration-ms="28091" started-at="2018-07-24T13:03:47Z" finished-at="2018-07-24T13:04:15Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='keepLogout']"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'EMB-BAN-168', ip: '10.99.90.140', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b1c139b37b6ddb91b8b0cf2f16ce54eb
+*** Element info: {Using=xpath, value=//a[@class='keepLogout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='keepLogout']"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
+System info: host: 'EMB-BAN-168', ip: '10.99.90.140', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\EMB-VI~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 67.0.3396.99, webStorageEnabled: true}
+Session ID: b1c139b37b6ddb91b8b0cf2f16ce54eb
+*** Element info: {Using=xpath, value=//a[@class='keepLogout']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.getCoordinates(Unknown Source)
+at org.openqa.selenium.interactions.internal.MouseAction.getActionLocation(MouseAction.java:65)
+at org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:43)
+at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:594)
+at com.qa.globals.Globals.moveToElement(Globals.java:420)
+at com.qa.testcases.TestAccount.MyAccountSignOutPage(TestAccount.java:126)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Account : signOut button clicked]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- MyAccountSignOutPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="closeBrowser" is-config="true" duration-ms="849" started-at="2018-07-24T13:04:15Z" finished-at="2018-07-24T13:04:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.TestBannerClick -->
-    </test> <!-- Test4 -->
-    <test name="Test5" duration-ms="102154" started-at="2018-07-23T13:18:52Z" finished-at="2018-07-23T13:20:34Z">
-      <class name="com.qa.testcases.TestSearch$TestAccount">
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="launchUrl" is-config="true" duration-ms="42669" started-at="2018-07-23T13:18:52Z" finished-at="2018-07-23T13:19:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="searchWithLogin()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="searchWithLogin" duration-ms="53817" started-at="2018-07-23T13:19:34Z" finished-at="2018-07-23T13:20:28Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Search result for shorts success with login]]>
-            </line>
-            <line>
-              <![CDATA[Search result for jeans success with login]]>
-            </line>
-            <line>
-              <![CDATA[Email :Login Icon clicked]]>
-            </line>
-            <line>
-              <![CDATA[Email :signout using Email number is successful]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- searchWithLogin -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestSearch$TestAccount@de3a06f]" name="closeBrowser" is-config="true" duration-ms="5665" started-at="2018-07-23T13:20:28Z" finished-at="2018-07-23T13:20:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.TestSearch$TestAccount -->
-    </test> <!-- Test5 -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.qa.testcases.TestAccount -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

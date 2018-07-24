@@ -17,8 +17,8 @@ public class AccountPage extends Globals{
 
 	//Define the page Objects
 	
-	@FindBy(xpath="//*[@id='page']/header/div/div/div/div[4]/div/div[3]/div/ul/li[3]/a")
-	//@FindBy(xpath="")
+	//@FindBy(xpath="//*[@id='page']/header/div/div/div/div[4]/div/div[3]/div/ul/li[3]/a")
+	@FindBy(css=".cnv-name.sel-menu-myaccount>a")
 	public WebElement MyAccount;
 	
 	@FindBy(xpath="//*[@id='CProEditButton']")
@@ -45,7 +45,8 @@ public class AccountPage extends Globals{
 	@FindBy(xpath="//*[@id='save-new-password']/span")
 	public WebElement savePasswordButton;
 	
-	@FindBy(xpath="//*[@id='form-account-edit-password']/div/div[3]/div/a")
+	//@FindBy(xpath="//*[@id='form-account-edit-password']/div/div[3]/div/a")
+	@FindBy(css=".btn-account")
 	public WebElement cancelPasswordButton;
 	
 	@FindBy(xpath="//a[@class='cnv-name sel-menu-myaccount']")
@@ -57,14 +58,15 @@ public class AccountPage extends Globals{
 	@FindBy(xpath="//a[@class='cnv-name sel-menu-address']")
 	public WebElement mySavedAddress;
 	
-	@FindBy(xpath="//a[@class='cnv-name sel-menu-myaccount-logout']")
+	@FindBy(xpath="//ul[@id='yw0']//li[4]//a[@class='cnv-name sel-menu-myaccount-logout']")
 	public WebElement signOut;
 	
 	@FindBy(xpath="//*[contains(text(),'No, keep me signed in')]")
 	//@FindBy(xpath="//*[@id='page']/div[1]/div/div[1]/a[1]")
 	public WebElement keepMeSignedIn;
 	
-	@FindBy(xpath="//*[contains(text(),'yes, sign me out')]")
+	//@FindBy(xpath="//a[contains(text(),'yes, sign me out')]")
+	@FindBy(xpath="//a[@class='keepLogout']")
 	public WebElement keepMeSignedOut;
 	
 	@FindBy(xpath="//*[contains(text(),'Update')]")
@@ -73,10 +75,10 @@ public class AccountPage extends Globals{
 	@FindBy(xpath="//*[contains(text(),'Set as Default')]")
 	public WebElement setasDefaultAddress;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[2]/div[6]/div[2]/div[3]/div[2]/div[2]/div[2]/div[2]/button[4]")
+	@FindBy(css=".address-remove-icon")
 	public WebElement deleteAddress;
 	
-	@FindBy(xpath="//*[contains(text(),'Yes')]")
+	@FindBy(css=".confirm")
 	public WebElement deleteAddressconfirm;
 	
 	@FindBy(xpath="//div[@class='col-sm-6 saved_ico_addition addressTitles showNewAddressBlock']")
