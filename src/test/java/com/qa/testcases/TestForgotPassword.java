@@ -1,26 +1,23 @@
 package com.qa.testcases;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.qa.datautitlities.Excelutility;
 import com.qa.globals.Globals;
 import com.qa.pageobjects.ForgotPassword;
 import com.qa.pageobjects.LoginPageobjects;
 import com.qa.pageobjects.OrderObjects;
 
-
-public class TestForgotPassword extends Globals{
+public class TestForgotPassword extends Globals {
 	@BeforeTest
 	public void launchUrl() throws Exception {
 		System.setProperty("browser", "Chrome");
 		setUp();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		browserNav(QA_CoverStoryURL);
-	}	
-	
+	}
+
 	@Test(priority = 0)
 	public void coverStoryForgotPassword() throws Exception {
 
@@ -35,8 +32,9 @@ public class TestForgotPassword extends Globals{
 		password.resetPassword.click();
 		log(Excelutility.excelData(2, 0, 0));
 		password.email.sendKeys(Excelutility.excelData(2, 0, 0));
-		password.proceedButoon.click();	
-}
+		password.proceedButoon.click();
+	}
+
 	@Test(priority = 1)
 	public void coverStoryCheckoutForgotPassword() throws Exception {
 
@@ -44,9 +42,9 @@ public class TestForgotPassword extends Globals{
 		ForgotPassword password = new ForgotPassword(driver);
 		OrderObjects order = new OrderObjects(driver);
 		TestAddCart cart = new TestAddCart();
-		cart.AddToCart();	
+		cart.AddToCart();
 		Thread.sleep(2000);
-		lgin.pncode.sendKeys(Excelutility.excelData(2, 2, 0));	
+		lgin.pncode.sendKeys(Excelutility.excelData(2, 2, 0));
 		order.proceedToCheckout.click();
 		Thread.sleep(2000);
 		password.CheckoutforgotPassword.click();
@@ -54,9 +52,8 @@ public class TestForgotPassword extends Globals{
 		password.resetPassword.click();
 		log(Excelutility.excelData(2, 0, 0));
 		password.email.sendKeys(Excelutility.excelData(2, 0, 0));
-		password.proceedButoon.click();	
-		//password.CheckoutSignInButton.click();
-		
-		
-}
+		password.proceedButoon.click();
+		// password.CheckoutSignInButton.click();
+
+	}
 }

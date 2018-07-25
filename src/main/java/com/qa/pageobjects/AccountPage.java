@@ -110,4 +110,21 @@ public class AccountPage extends Globals{
 	
 	@FindBy(xpath="//button[@type='button'][contains(text(),'Cancel')]")
 	public WebElement cancelButtonInAddNewAddress;
+	
+	@FindBy(xpath="//div[@class='pas']")
+	public WebElement nameChanged;
+	
+	@FindBy(xpath="//span[@id='success-msg']")
+	public WebElement passwordChanged;
+	
+	@FindBy(xpath="//h2[@class='pbs ui-borderBottom myaccount-title']")
+	public WebElement orderPage;
+	
+	@FindBy(xpath="//h2[contains(text(),'Your address saved successfully')]")
+	public WebElement addressUpdated;
+	
+	@FindBy(xpath="//h2[contains(text(),'Your address deleted successfully')]")
+	public WebElement addressDeleted;
+	
+
 }

@@ -14,6 +14,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -507,6 +508,7 @@ public class Globals {
 				options.setExperimentalOption("prefs", chromePrefs);
 				options.addArguments("no-sandbox");
 				DesiredCapabilities cap = DesiredCapabilities.chrome();
+				//cap.setCapability("pageLoadStrategy", "none");
 				cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				cap.setCapability(ChromeOptions.CAPABILITY, options);
 				driver = new ChromeDriver(cap);
@@ -831,6 +833,40 @@ public class Globals {
 		return frameworkBrowserName;
 	}
 	
+	//=================Vinod=======================
+	public void clickLinkByHref(String href) {
+        List<WebElement> anchors = driver.findElements(By.tagName("a"));
+        Iterator<WebElement> i = anchors.iterator();
+
+        while(i.hasNext()) {
+            WebElement anchor = i.next();
+            if(anchor.getAttribute("href").contains(href)) {
+                anchor.click();
+                break;
+            }
+        }
+    }
+	//=================Vinod=======================================
+	public void clickLinkByHref(String href, int position) {
+        List<WebElement> anchors = driver.findElements(By.tagName("a"));
+        Iterator<WebElement> i = anchors.iterator();
+
+        int j = 0;
+        while(i.hasNext()) {
+            WebElement anchor = i.next();
+
+            if(anchor.getAttribute("href").contains(href)) {
+                j++;
+            }
+
+            if(anchor.getAttribute("href").contains(href)
+                    && j == position) {
+                anchor.click();
+                break;
+            }
+        }
+    }
+	
 	public boolean elementHasClass(WebElement element, String disabled) {
 		return element.getAttribute("class").contains(disabled);
 	}
@@ -962,6 +998,8 @@ public class Globals {
 				throw new IllegalStateException(exceptionMessage);
 			}
 		}
+		
+		
 
 		driver = new Augmenter().augment(remote);
 
