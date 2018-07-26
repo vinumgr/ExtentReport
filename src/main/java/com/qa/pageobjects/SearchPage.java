@@ -44,5 +44,35 @@ public class SearchPage extends Globals {
 
 	@FindBy(xpath = "//*[contains(@class, 'new-in-banner')]")
 	public WebElement bannerTwo;
+	
+	@FindBy(xpath = "//a[contains(text(),'dresses')]")
+	public WebElement bannerThree1;
+	
+	@FindBy(xpath = "//a[contains(text(),'skirts')]")
+	public WebElement bannerThree2;
+	
+	@FindBy(xpath = "//a[contains(text(),'tops')]")
+	public WebElement bannerThree3;
+	
+	@FindBy(xpath = "//a[contains(text(),'jeans')]")
+	public WebElement bannerThree4;
+	
+	@FindBy(xpath = "//a[contains(text(),'trousers')]")
+	public WebElement bannerThree5;
+	
+	@FindBy(xpath = "//a[contains(text(),'jackets')]")
+	public WebElement bannerThree6;
+	
+	@FindBy(xpath = "//img[@src='//www.coverstory.co.in/media/cms/home/homepage_new/AW_17.png']")
+	public WebElement lookBook1;
+	
+	@FindBy(xpath = "//img[@src='//www.coverstory.co.in/media/cms/home/homepage_new/SS_18.png']")
+	public WebElement lookBook2;
+	
+	/*@FindBy(xpath = ".//*[@id='content-lookbook-homenew']/div/div/div[1]/a/img")
+	public WebElement blog1;
+	
+	@FindBy(xpath = "//h2[contains(text(),'SPRING SUMMER ' 18')]")
+	public WebElement blog2;*/
 
 }

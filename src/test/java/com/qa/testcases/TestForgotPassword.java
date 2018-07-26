@@ -1,6 +1,12 @@
 package com.qa.testcases;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
 import java.util.concurrent.TimeUnit;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.qa.datautitlities.Excelutility;
@@ -33,6 +39,9 @@ public class TestForgotPassword extends Globals {
 		log(Excelutility.excelData(2, 0, 0));
 		password.email.sendKeys(Excelutility.excelData(2, 0, 0));
 		password.proceedButoon.click();
+		Assert.assertEquals("Reset Password Link Sent", password.ResetPwd.getAttribute("innerText"),
+				"Text not matched | ");
+		password.closeResetPwd.click();
 	}
 
 	@Test(priority = 1)
@@ -53,7 +62,12 @@ public class TestForgotPassword extends Globals {
 		log(Excelutility.excelData(2, 0, 0));
 		password.email.sendKeys(Excelutility.excelData(2, 0, 0));
 		password.proceedButoon.click();
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.coverstory.co.in/onestepcheckout/index/");
 		// password.CheckoutSignInButton.click();
-
 	}
+	@AfterTest
+	public void closeBrowser() {
+		browserClose();
+	}
+
 }

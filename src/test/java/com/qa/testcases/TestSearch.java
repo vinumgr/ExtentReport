@@ -26,7 +26,7 @@ public class TestSearch extends Globals {
 		// Search page with Login
 		@Test(priority = 0)
 
-		public void searchWithLogin() throws Exception {
+		public void search() throws Exception {
 			SearchPage search = new SearchPage(driver);
 			LoginPageobjects lgin = new LoginPageobjects(driver);
 			// Login with email

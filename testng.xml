@@ -29,5 +29,20 @@
             <class name="com.qa.testcases.TestSearch" />            	
 		</classes>		
 	</test> <!-- Test -->
+	<test thread-count="5" name="Test6">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestAccount" />            	
+		</classes>		
+	</test> <!-- Test -->
+	<!-- <test thread-count="5" name="Test7">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestPlaceOrder" />            	
+		</classes>		
+	</test> Test -->
+	<test thread-count="5" name="Test8">
+		<classes>		   	 
+            <class name="com.qa.testcases.TestForgotPassword" />            	
+		</classes>		
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
 

@@ -58,6 +58,8 @@ public class TestAddCart extends Globals {
 		} else if (!elementHasClass(addcart.selectSizeL, "disabled")) {
 			addcart.selectSizeL.click();
 			System.out.println("Large size is selected");
+			
+			
 
 		} else {
 			System.out.println("Product is Out of stock");
@@ -67,6 +69,7 @@ public class TestAddCart extends Globals {
 			// Thread.sleep(3000);
 			WebDriverExplicitWait(driver, 10, "Xpath", Constants.addTocartButton);
 			addcart.addTocartButton.click();
+			
 			Reporter.log("Item added from mini cart successfully", true);
 			Thread.sleep(5000);
 			// WebDriverExplicitWait(driver, 10, "Xpath",

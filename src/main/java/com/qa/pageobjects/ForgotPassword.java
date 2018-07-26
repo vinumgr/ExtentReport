@@ -40,4 +40,10 @@ public class ForgotPassword extends Globals {
 
 	@FindBy(xpath = "//*[@id='tabs-1']/div/div[4]/fieldset/div[3]/div[2]/button")
 	public WebElement CheckoutResendButton;
+	
+	@FindBy(xpath = "//*[@id='pop_content1']/div[5]/div[1]")
+	public WebElement ResetPwd;
+	
+	@FindBy(xpath = "//*[@id='pop_content1']/button")
+	public WebElement closeResetPwd;
 }

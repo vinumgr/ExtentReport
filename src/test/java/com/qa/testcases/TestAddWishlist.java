@@ -1,7 +1,6 @@
 package com.qa.testcases;
 
 import java.util.concurrent.TimeUnit;
-
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -67,6 +66,23 @@ public class TestAddWishlist extends Globals {
 		// Login with email
 		CommonMethods.loginViaEmail();
 		Reporter.log("Login successful", true);
+		Thread.sleep(10000);
+		// WebDriverExplicitWait(driver, 30, "Xpath", Constants.loginIcon);
+		lgin.loginIcon.click();
+		// Thread.sleep(10000);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		addwishlist.wishlistInAccount.click();
+		Reporter.log("Wishlist section opened successful", true);
+		scrollBottom();
+		Thread.sleep(3000);
+		//WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		if (addwishlist.wishlistClearallButton.isDisplayed()) {
+			addwishlist.wishlistClearallButton.click();
+			System.out.println("Clear wishlist button is clicked");
+		}else{
+			System.out.println("Wishlist is empty");
+		}
+		//VerifyTextPresent(addwishlist.wishlistClearallButton, 10);
 		Thread.sleep(3000);
 		// WebDriverExplicitWait(driver, 10, "Xpath", Constants.clothing);
 		moveToElement(addcart.clothing);
@@ -77,7 +93,19 @@ public class TestAddWishlist extends Globals {
 		moveToElement(quickview.quickviewPLP);
 		quickview.quickviewIcon.click();
 		Reporter.log("Quickview window opened successful", true);
-		quickview.quickAddToWishlist.click();
+		if (!elementHasClass(addwishlist.wishlistQuickviewItemAddedPDPMsg, "catWishListAdded")) {
+			addwishlist.wishlistQuickviewItemAddedPDPMsg.click();
+			System.out.println("Product is added to wishlist");
+		} else if (elementHasClass(addwishlist.wishlistQuickviewItemAddedPDPMsg, "catWishListAdded")) {
+			// doubleClick(addwishlist.wishlistItemAddedPDPMsg);
+			addwishlist.wishlistQuickviewItemAddedPDPMsg.click();
+			addwishlist.wishlistQuickviewItemAddedPDPMsg.click();
+			System.out.println("Product is removed and added to awishlist");
+		} else {
+			System.out.println("Product is not added to wishlist");
+
+		}
+		// quickview.quickAddToWishlist.click();
 		Reporter.log("Item added to cart successful", true);
 		Thread.sleep(5000);
 		quickview.quickviewclose.click();
@@ -88,13 +116,13 @@ public class TestAddWishlist extends Globals {
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.wishlistInAccount);
 		addwishlist.wishlistInAccount.click();
 		Reporter.log("Wishlist section opened successful", true);
-		// Thread.sleep(10000);
+	/*	// Thread.sleep(10000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		// Thread.sleep(5000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
 		lgin.signOutButton.click();
-		Reporter.log("Signout successful", true);
+		Reporter.log("Signout successful", true);*/
 
 	}
 
@@ -105,8 +133,17 @@ public class TestAddWishlist extends Globals {
 		AddToCartObjects addcart = new AddToCartObjects(driver);
 		AddToWishlist_PO addwishlist = new AddToWishlist_PO(driver);
 		QuickViewObjects quickview = new QuickViewObjects(driver);
-		CommonMethods.loginViaEmail();
+		/*CommonMethods.loginViaEmail();
 		Reporter.log("Login successful", true);
+		//Thread.sleep(10000);
+		 WebDriverExplicitWait(driver, 30, "Xpath", Constants.loginIcon);
+		lgin.loginIcon.click();
+		// Thread.sleep(10000);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		addwishlist.wishlistInAccount.click();
+		Reporter.log("Wishlist section opened successful", true);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		addwishlist.wishlistClearallButton.click();*/
 		moveToElement(addcart.clothing);
 		Thread.sleep(3000);
 		// WebDriverExplicitWait(driver, 10, "Xpath", Constants.clothing);
@@ -115,19 +152,34 @@ public class TestAddWishlist extends Globals {
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.dressAndJumpsuits);
 		addcart.dressAndJumpsuits.click();
 		moveToElement(quickview.quickviewPLP);
-		addwishlist.wishlistIconPLP.click();
+
+		if (!elementHasClass(addwishlist.wishlistPLPItemAddedPDPMsg, "catWishListAdded")) {
+			addwishlist.wishlistPLPItemAddedPDPMsg.click();
+			System.out.println("Product is added to wishlist");
+		} else if (elementHasClass(addwishlist.wishlistPLPItemAddedPDPMsg, "catWishListAdded")) {
+			// doubleClick(addwishlist.wishlistItemAddedPDPMsg);
+			addwishlist.wishlistPLPItemAddedPDPMsg.click();
+			Thread.sleep(5000);
+			addwishlist.wishlistPLPItemAddedPDPMsg.click();
+			System.out.println("Product is removed and added to awishlist");
+		} else {
+			System.out.println("Product is not added to wishlist");
+
+		}
+
+		// addwishlist.wishlistIconPLP.click();
 		Thread.sleep(1000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		Thread.sleep(10000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.wishlistInAccount);
 		addwishlist.wishlistInAccount.click();
-		Thread.sleep(10000);
+		/*Thread.sleep(10000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		Thread.sleep(2000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
-		lgin.signOutButton.click();
+		lgin.signOutButton.click();*/
 	}
 
 	// PDP
@@ -137,7 +189,16 @@ public class TestAddWishlist extends Globals {
 		LoginPageobjects lgin = new LoginPageobjects(driver);
 		AddToCartObjects addcart = new AddToCartObjects(driver);
 		AddToWishlist_PO addwishlist = new AddToWishlist_PO(driver);
-		CommonMethods.loginViaEmail();
+		/*CommonMethods.loginViaEmail();
+		//Thread.sleep(10000);
+		 WebDriverExplicitWait(driver, 30, "Xpath", Constants.loginIcon);
+		lgin.loginIcon.click();
+		// Thread.sleep(10000);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		addwishlist.wishlistInAccount.click();
+		Reporter.log("Wishlist section opened successful", true);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.wishlistInAccount);
+		addwishlist.wishlistClearallButton.click();*/
 		Thread.sleep(2000);
 		// WebDriverExplicitWait(driver, 10, "Xpath", Constants.clothing);
 		moveToElement(addcart.clothing);
@@ -149,20 +210,35 @@ public class TestAddWishlist extends Globals {
 		// Thread.sleep(6000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.PLP);
 		addcart.PLP.click();
-		addwishlist.wishlistIconSignInPDP.click();
+
+		// catWishListAdded catWishList
+		if (!elementHasClass(addwishlist.wishlistPDPMsg, "catWishListAdded")) {
+			addwishlist.wishlistPDPMsg.click();
+			System.out.println("Product is added to wishlist");
+		} else if (elementHasClass(addwishlist.wishlistPDPMsg, "catWishListAdded")) {
+			// doubleClick(addwishlist.wishlistItemAddedPDPMsg);
+			addwishlist.wishlistPDPMsg.click();
+			addwishlist.wishlistPDPMsg.click();
+			System.out.println("Product is removed and added to awishlist");
+		} else {
+			System.out.println("Product is not added to wishlist");
+
+		}
+
+		// addwishlist.wishlistIconSignInPDP.click();
 		// Thread.sleep(1000);
-		WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+		WebDriverExplicitWait(driver, 30, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		Thread.sleep(10000);
 		// WebDriverExplicitWait(driver, 10, "Xpath",
 		// Constants.wishlistInAccount);
 		addwishlist.wishlistInAccount.click();
-		Thread.sleep(10000);
+		/*Thread.sleep(10000);
 		// WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 		lgin.loginIcon.click();
 		// Thread.sleep(2000);
 		WebDriverExplicitWait(driver, 10, "Xpath", Constants.signOutButton);
-		lgin.signOutButton.click();
+		lgin.signOutButton.click();*/
 	}
 
 	@AfterTest

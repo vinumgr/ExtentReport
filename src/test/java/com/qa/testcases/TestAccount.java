@@ -105,6 +105,7 @@ public class TestAccount extends Globals {
 		Reporter.log("Account : LastNameAddNewAddress button clicked", true);
 		account.pincodeAddNewAddress.sendKeys(Excelutility.excelData(2, 2, 0));
 		Reporter.log("Account : pincodeAddNewAddress button clicked", true);
+		Thread.sleep(3000);
 		account.address1AddNewAddress.sendKeys("Address : Embitel Testing");
 		Reporter.log("Account : address1AddNewAddress button clicked", true);
 		account.phoneAddNewAddress.sendKeys(Excelutility.excelData(3, 0, 0));

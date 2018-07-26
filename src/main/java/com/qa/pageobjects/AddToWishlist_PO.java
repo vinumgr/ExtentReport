@@ -28,7 +28,7 @@ public class AddToWishlist_PO extends Globals {
 	@FindBy(xpath = "//*[@id='wish_list_item_5596']/div/div[2]/div[2]/button")
 	public WebElement wishlistAddToCartButton;
 
-	@FindBy(xpath = "//*[@id='removeWishlistProducts']")
+	@FindBy(xpath = "//a[@id='removeWishlistProducts']")
 	public WebElement wishlistClearallButton;
 
 	@FindBy(xpath = "//*[@id='content']/div[2]/div[3]/div/div[1]/button")
@@ -58,6 +58,18 @@ public class AddToWishlist_PO extends Globals {
 	@FindBy(xpath = "//*[@id='page']/header/div/div/div/div[4]/div/div[3]/div/ul/li[4]/a")
 	public WebElement wishlistInAccount;
 
+	//@FindBy(xpath = "//span[contains(text(),'Add to wishlist')]")
+	@FindBy(xpath = "//*[@id='pdp_productdetail']/div[3]/div[2]/span")
+	public WebElement wishlistPDPMsg;
+	
+	//@FindBy(xpath = "//span[contains(text(),'Added to wishlist')]")
+	@FindBy(xpath = "//*[@id='quickview_productdetail']/div[3]/div[2]/span")
+	public WebElement wishlistQuickviewItemAddedPDPMsg;
+	
+	@FindBy(xpath = "//*[@id='productsCatalog']/li[1]/div/div[2]/a/div/div[1]/span")
+	public WebElement wishlistPLPItemAddedPDPMsg;
+	
+	
 	//
 
 	/*

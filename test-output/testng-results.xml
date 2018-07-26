@@ -1,157 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Account : loginIcon button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : MyAccount button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : editProfileButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[First name successfully edited]]>
-    </line>
-    <line>
-      <![CDATA[Last name successfully edited]]>
-    </line>
-    <line>
-      <![CDATA[Account : saveProfileButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : changeAccountPasswordButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : newPasswordBox button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : confirmPasswordBox button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : savePasswordButton button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : mySavedAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : openAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : firstNameAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : LastNameAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : pincodeAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : address1AddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : phoneAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : saveAddressInAddNewAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : deleteAddress button clicked]]>
-    </line>
-    <line>
-      <![CDATA[Account : deleteAddressconfirm button clicked]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76975" started-at="2018-07-25T13:42:51Z" finished-at="2018-07-25T13:44:08Z">
+  <suite name="Default suite" duration-ms="87098" started-at="2018-07-26T13:52:46Z" finished-at="2018-07-26T13:54:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76975" started-at="2018-07-25T13:42:51Z" finished-at="2018-07-25T13:44:08Z">
-      <class name="com.qa.testcases.TestAccount">
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="launchUrl" is-config="true" duration-ms="24814" started-at="2018-07-25T13:42:51Z" finished-at="2018-07-25T13:43:16Z">
+    <test name="Default test" duration-ms="87098" started-at="2018-07-26T13:52:46Z" finished-at="2018-07-26T13:54:13Z">
+      <class name="com.qa.testcases.TestForgotPassword">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.qa.testcases.TestForgotPassword@103f852]" name="launchUrl" is-config="true" duration-ms="40254" started-at="2018-07-26T13:52:46Z" finished-at="2018-07-26T13:53:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="MyAccountInfo()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountInfo" duration-ms="29489" started-at="2018-07-25T13:43:16Z" finished-at="2018-07-25T13:43:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Account : loginIcon button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : MyAccount button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : editProfileButton button clicked]]>
-            </line>
-            <line>
-              <![CDATA[First name successfully edited]]>
-            </line>
-            <line>
-              <![CDATA[Last name successfully edited]]>
-            </line>
-            <line>
-              <![CDATA[Account : saveProfileButton button clicked]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MyAccountInfo -->
-        <test-method status="PASS" signature="MyAccountChangePassword()[pri:1, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountChangePassword" duration-ms="1545" started-at="2018-07-25T13:43:46Z" finished-at="2018-07-25T13:43:47Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Account : changeAccountPasswordButton button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : newPasswordBox button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : confirmPasswordBox button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : savePasswordButton button clicked]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- MyAccountChangePassword -->
-        <test-method status="PASS" signature="MyAccountOrderPage()[pri:2, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountOrderPage" duration-ms="3278" started-at="2018-07-25T13:43:47Z" finished-at="2018-07-25T13:43:50Z">
+        <test-method status="PASS" signature="coverStoryForgotPassword()[pri:0, instance:com.qa.testcases.TestForgotPassword@103f852]" name="coverStoryForgotPassword" duration-ms="17787" started-at="2018-07-26T13:53:26Z" finished-at="2018-07-26T13:53:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MyAccountOrderPage -->
-        <test-method status="PASS" signature="MyAccountSaveAddressPage()[pri:3, instance:com.qa.testcases.TestAccount@103f852]" name="MyAccountSaveAddressPage" duration-ms="15830" started-at="2018-07-25T13:43:50Z" finished-at="2018-07-25T13:44:06Z">
+        </test-method> <!-- coverStoryForgotPassword -->
+        <test-method status="PASS" signature="coverStoryCheckoutForgotPassword()[pri:1, instance:com.qa.testcases.TestForgotPassword@103f852]" name="coverStoryCheckoutForgotPassword" duration-ms="25976" started-at="2018-07-26T13:53:44Z" finished-at="2018-07-26T13:54:10Z">
           <reporter-output>
-            <line>
-              <![CDATA[Account : mySavedAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : openAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : firstNameAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : LastNameAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : pincodeAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : address1AddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : phoneAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : saveAddressInAddNewAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : deleteAddress button clicked]]>
-            </line>
-            <line>
-              <![CDATA[Account : deleteAddressconfirm button clicked]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- MyAccountSaveAddressPage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestAccount@103f852]" name="closeBrowser" is-config="true" duration-ms="1971" started-at="2018-07-25T13:44:06Z" finished-at="2018-07-25T13:44:08Z">
+        </test-method> <!-- coverStoryCheckoutForgotPassword -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.testcases.TestForgotPassword@103f852]" name="closeBrowser" is-config="true" duration-ms="3055" started-at="2018-07-26T13:54:10Z" finished-at="2018-07-26T13:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.testcases.TestAccount -->
+      </class> <!-- com.qa.testcases.TestForgotPassword -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
