@@ -4,15 +4,28 @@
   <listeners>
     <listener class-name="com.qa.extentreportlistener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Test4(failed)">
+  <test thread-count="5" name="Test7(failed)">
     <classes>
-      <class name="com.qa.testcases.TestBannerClick">
+      <class name="com.qa.testcases.TestPlaceOrder">
         <methods>
+          <include name="OrderPlace"/>
           <include name="launchUrl"/>
-          <include name="BannerclickWithLoginTwo"/>
+          <include name="closeBrowser"/>
+          <include name="OrderPlaceCheckout"/>
+        </methods>
+      </class> <!-- com.qa.testcases.TestPlaceOrder -->
+    </classes>
+  </test> <!-- Test7(failed) -->
+  <test thread-count="5" name="Test8(failed)">
+    <classes>
+      <class name="com.qa.testcases.TestForgotPassword">
+        <methods>
+          <include name="coverStoryCheckoutForgotPassword"/>
+          <include name="coverStoryForgotPassword"/>
+          <include name="launchUrl"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.qa.testcases.TestBannerClick -->
+      </class> <!-- com.qa.testcases.TestForgotPassword -->
     </classes>
-  </test> <!-- Test4(failed) -->
+  </test> <!-- Test8(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -130,12 +130,12 @@ public class TestBannerClick extends Globals {
 		search.coverstoryName.click();
 		// Thread.sleep(5000);
 		search.lookBook1.click();
-		Assert.assertEquals(driver.getCurrentUrl(), "https://www.coverstory.co.in/lookbook-2/");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.coverstory.co.in/lookbook-4/");
 		Reporter.log("LookBook1 Banner clicked with Login", true);
 		search.coverstoryName.click();
 		// Thread.sleep(5000);
 		search.lookBook2.click();
-		Assert.assertEquals(driver.getCurrentUrl(), "https://www.coverstory.co.in/lookbook-2/");
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.coverstory.co.in/lookbook-5/");
 		Reporter.log("LookBook2 Banner clicked with Login", true);
 		search.coverstoryName.click();
 		Thread.sleep(5000);

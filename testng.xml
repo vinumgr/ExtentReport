@@ -9,11 +9,11 @@
 		    <class name="com.qa.testcases.TestCswLogin" />  	          	
 		</classes>		
 	</test> <!-- Test -->
-	<!-- <test thread-count="5" name="Test2">
+	<test thread-count="5" name="Test2">
 		<classes>		   	 
             <class name="com.qa.testcases.TestAddCart" />            	
 		</classes>		
-	</test> Test -->
+	</test> <!-- Test -->
 	<test thread-count="5" name="Test3">
 		<classes>		   	 
             <class name="com.qa.testcases.TestAddWishlist" />            	
@@ -34,11 +34,11 @@
             <class name="com.qa.testcases.TestAccount" />            	
 		</classes>		
 	</test> <!-- Test -->
-	<!-- <test thread-count="5" name="Test7">
+	<test thread-count="5" name="Test7">
 		<classes>		   	 
             <class name="com.qa.testcases.TestPlaceOrder" />            	
 		</classes>		
-	</test> Test -->
+	</test> <!-- Test -->
 	<test thread-count="5" name="Test8">
 		<classes>		   	 
             <class name="com.qa.testcases.TestForgotPassword" />            	

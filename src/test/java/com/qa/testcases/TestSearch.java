@@ -3,11 +3,17 @@ package com.qa.testcases;
 
 import static org.testng.Assert.assertTrue;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.qa.globals.CommonMethods;
+import com.qa.globals.Constants;
 import com.qa.globals.Globals;
 import com.qa.pageobjects.LoginPageobjects;
 import com.qa.pageobjects.SearchPage;
@@ -31,7 +37,10 @@ public class TestSearch extends Globals {
 			LoginPageobjects lgin = new LoginPageobjects(driver);
 			// Login with email
 			CommonMethods.loginViaEmail();
-			Thread.sleep(1000);
+			//WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
+			Thread.sleep(3000);
+			//Wait(search.searchIcon, 30);
+			// Create object of WebDriverWait class
 			moveToElement(search.searchIcon);
 			search.searchBox.click();
 			search.searchBox.sendKeys("shorts");
@@ -44,13 +53,14 @@ public class TestSearch extends Globals {
 			search.searchButton.click();
 			assertTrue("Search results 'jeans' ".trim().equalsIgnoreCase(search.searchResultTwo.getText()));
 			Reporter.log("Search result for jeans success with login", true);
-			Thread.sleep(1000);
+			//Thread.sleep(1000);
 			// WebDriverExplicitWait(driver, 10, "Xpath", Constants.loginIcon);
 			lgin.loginIcon.click();
 			Reporter.log("Email :Login Icon clicked", true);
 			Thread.sleep(2000);
 			// WebDriverExplicitWait(driver, 20, "Xpath",
 			// Constants.signOutButton);
+			//Wait(lgin.signOutButton, 30);
 			lgin.signOutButton.click();
 			Reporter.log("Email :signout using Email number is successful", true);
 

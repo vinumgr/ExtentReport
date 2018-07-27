@@ -44,7 +44,7 @@ public class TestPlaceOrder extends Globals {
 		order.proceedToPaymentOrder.click();
 		Thread.sleep(2000);
 		order.netBanking.click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		order.iciciBank.click();
 		Thread.sleep(3000);
 		order.completePayment.click();

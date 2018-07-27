@@ -142,7 +142,7 @@ public class TestAccount extends Globals {
 	// Closing the Browser:
 	@AfterTest
 	public void closeBrowser() {
-		driver.quit();
+		browserClose();
 	}
 
 }

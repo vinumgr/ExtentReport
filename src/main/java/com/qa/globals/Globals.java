@@ -833,7 +833,7 @@ public class Globals {
 		return frameworkBrowserName;
 	}
 	
-	//=================Vinod=======================
+	//=================Vinod=====================================
 	public void clickLinkByHref(String href) {
         List<WebElement> anchors = driver.findElements(By.tagName("a"));
         Iterator<WebElement> i = anchors.iterator();
@@ -866,6 +866,7 @@ public class Globals {
             }
         }
     }
+	
 	
 	public boolean elementHasClass(WebElement element, String disabled) {
 		return element.getAttribute("class").contains(disabled);

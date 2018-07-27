@@ -97,7 +97,8 @@ public class AddToCartObjects extends Globals {
 	@FindBy(xpath = "//button[@class='btn remove-item cart-pop-btn']")
 	public WebElement removeFromMiniCartButton;
 
-	@FindBy(xpath = "//*[@id='items_overlay_1']/div[6]/a")
+	//@FindBy(xpath = "//*[@id='items_overlay_1']/div[6]/a")
+	@FindBy(xpath = "//a[@class='fa fa-times show-alert-cartremoval']")
 	public WebElement removeFromCartSymbol;
 
 	@FindBy(xpath = "//button[@class='btn remove-item cart-pop-btn']")
